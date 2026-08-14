@@ -1,0 +1,69 @@
+{
+  "name": "avoid-adogen",
+  "displayName": "Avoid Adogen",
+  "description": "코드가 너무 깊어지면 여백에 파동권이 나타납니다",
+  "version": "0.0.1",
+  "publisher": "leekwangmin",
+  "private": true,
+  "engines": {
+    "vscode": "^1.85.0",
+    "node": ">=20"
+  },
+  "categories": ["Other"],
+  "main": "./dist/extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "configuration": {
+      "title": "Avoid Adogen",
+      "properties": {
+        "avoidAdogen.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "아도겐 표시 여부"
+        },
+        "avoidAdogen.minDepth": {
+          "type": "number",
+          "default": 4,
+          "minimum": 1,
+          "description": "아도겐이 등장하는 최소 코드 depth"
+        },
+        "avoidAdogen.minLines": {
+          "type": "number",
+          "default": 5,
+          "minimum": 1,
+          "description": "삼각형으로 인정할 최소 줄 수"
+        },
+        "avoidAdogen.maxConcurrent": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "description": "동시에 표시할 최대 개수 (0 = 무제한)"
+        },
+        "avoidAdogen.languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "대상 언어 ID 목록 (빈 배열 = 모든 언어)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "test": "mocha",
+    "package": "npm run compile && vsce package"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.24.0",
+    "esbuild": "^0.20.0",
+    "mocha": "^10.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

@@ -2,6 +2,8 @@
 
 코드가 너무 깊어지면 왼쪽 여백에서 파동권이 날아옵니다.
 
+<img src="https://raw.githubusercontent.com/LeeKwang-min/avoid-adogen/main/example.png" width="420" alt="중첩이 깊어질수록 왼쪽 여백의 아도겐이 구슬에서 파동권, 관통 광선으로 커지는 세 단계">
+
 ## 어떻게 동작하나
 
 들여쓰기가 계단처럼 깊어지면 왼쪽에 삼각형 여백이 생깁니다. 그 여백이 넓어질수록

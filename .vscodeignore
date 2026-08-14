@@ -3,6 +3,7 @@ src/**
 test/**
 docs/**
 fixtures/**
+example.png
 node_modules/**
 esbuild.js
 tsconfig.json

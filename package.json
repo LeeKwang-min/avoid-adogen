@@ -4,7 +4,23 @@
   "description": "코드가 너무 깊어지면 여백에 파동권이 나타납니다",
   "version": "0.0.1",
   "publisher": "leekwangmin",
+  "license": "MIT",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeeKwang-min/avoid-adogen.git"
+  },
+  "homepage": "https://github.com/LeeKwang-min/avoid-adogen#readme",
+  "bugs": {
+    "url": "https://github.com/LeeKwang-min/avoid-adogen/issues"
+  },
+  "keywords": [
+    "indentation",
+    "nesting",
+    "depth",
+    "refactoring",
+    "fun"
+  ],
   "engines": {
     "vscode": "^1.85.0",
     "node": ">=20"

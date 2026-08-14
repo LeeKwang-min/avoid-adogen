@@ -53,13 +53,24 @@ YAML 등에서 그대로 동작합니다.
 
 ## 설치
 
+[Releases](https://github.com/LeeKwang-min/avoid-adogen/releases)에서 최신 `.vsix`를
+내려받은 뒤:
+
+1. `Cmd+Shift+P` (Windows·Linux는 `Ctrl+Shift+P`)
+2. `Extensions: Install from VSIX...` 실행
+3. 내려받은 `.vsix` 선택
+4. VS Code 재시작
+
+Marketplace에 올라가 있지 않으므로 Extensions 탭에서 검색해서는 찾을 수 없습니다.
+
+직접 빌드하려면:
+
 ```bash
 npm install
 npm run package
 ```
 
-생성된 `avoid-adogen-0.0.1.vsix`를 VS Code에서 설치합니다.
-명령 팔레트 → `Extensions: Install from VSIX...`
+생성된 `avoid-adogen-0.0.1.vsix`를 위와 같은 방법으로 설치합니다.
 
 ## 개발
 

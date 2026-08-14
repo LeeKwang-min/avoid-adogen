@@ -4,6 +4,14 @@
 
 <img src="https://raw.githubusercontent.com/LeeKwang-min/avoid-adogen/main/example.png" width="420" alt="중첩이 깊어질수록 왼쪽 여백의 아도겐이 구슬에서 파동권, 관통 광선으로 커지는 세 단계">
 
+> [!IMPORTANT]
+> **VS Code 전용입니다.** IntelliJ 등 JetBrains IDE, Vim, Sublime Text 같은 다른
+> 에디터에서는 동작하지 않습니다. 에디터마다 플러그인 시스템과 렌더링 API가 달라서
+> 이식하려면 별도 구현이 필요합니다.
+>
+> VS Code 기반인 Cursor·Windsurf·VSCodium에서는 동작할 것으로 보이지만 직접 확인하지는
+> 않았습니다.
+
 ## 어떻게 동작하나
 
 들여쓰기가 계단처럼 깊어지면 왼쪽에 삼각형 여백이 생깁니다. 그 여백이 넓어질수록
